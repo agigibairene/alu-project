@@ -1,0 +1,12 @@
+GET http://localhost:8080/tutorials
+
+# POST new tutorials to the server
+POST http://localhost:8080/tutorials
+Content-Type: application/json
+
+{
+    "tutorial": {
+        "tutorial": "https://www.youtube.com/watch?v=6eGxZbrVpSA",
+        "channel": "irene"
+    }
+}
