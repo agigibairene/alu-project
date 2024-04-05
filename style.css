@@ -276,7 +276,7 @@ p{
 
 .about h2{
     margin: 0.8rem;
-    color: #fff;
+    color: #39FF14;
     font-family: "Alkatra", system-ui;
     font-size: 40px;
 }
@@ -331,7 +331,6 @@ p{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 2px solid #3d0eab;
     object-fit: cover;
   }
   .recommendation__item--text {
@@ -368,6 +367,11 @@ p{
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+  }
+
+  .center img{
+    width: 200px;
+    height: 200px;
   }
   
   /*# sourceMappingURL=AppStyle.css.map */
