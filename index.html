@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EduAgric</title>
+</head>
+<body>
+
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+
+    <div id="scrollUp">
+        <i class="ri-arrow-up-line"></i>
+    </div>
+
+<!-- NAVBAR  -->
+    <div id="home" class="home">
+        <header>
+            <div class="logo">
+                <i class="ri-graduation-cap-line"></i>
+                <h2 id="company">EduAgric</h2>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+              <ul>
+                 <li><a href="#" class="page" id="homepage">Home</a></li>
+                 <li><a href="" class="page" id="about-us">About us</a></li>
+                 <li><a href="" class="page" id="resources">Resources</a></li>
+                 <li><a href="" class="page" id="articles">Articles</a></li>
+                 <li><a href="" class="page" id="tutorials">Tutorials</a>
+              </ul>
+          </nav>
+       </header>
+
+        <!-- LANDING PAGE -->
+        <div class="head" id="head" >
+            <div class="content" data-viewPort = "slideTop">
+               <h2 id="title"><span>Organic</span> Farming</h2>
+               <p>
+                We provide high-quality food products, ranging <br/>from vegetables to fruits.
+                We <b>only</b> grow and sell <br><b>non-GMO</b> products. Check out more below!
+               </p>
+               <button id="learn-more">Learn more!<i class="ri-arrow-right-line"></i></button>
+            </div>
+            <img src="./smart-farm-application.webp" data-viewPort = "slideLeft"/>
+        </div>
+    </div>
+
+    <!-- ABOUT US PAGE -->
+    <div class="about" id="about">
+        <h2>About Us</h2>
+     <div class=" content first" >
+        <img src="./image2.png" data-viewPort = "slideLeft"/>
+        <p data-viewPort = "slideTop">
+            <span>Overview</span><br>Our mission is to provide customers with access to <br>nutritious food that is free from genetically modified ingredients.<br>We work with local farmers who share our commitment to<br> organic agriculture, and we carefully select every products<br>that we sell to ensure that it meets our high quality standards
+        </p>
+     </div>
+     <div class="content">
+        <p data-viewPort = "slideTop">
+            <span>Why Choose Us?</span><br>From fresh fruilts and vegetables to dairy products, <br>our selection of organic food is designed to meet<br>the diverse needs of our customers while supporting<br>a healthier planet. Our organic products are free fro<br>harmful chemicals and gene-modified ingredients</p>
+        <img src="./image1.png" id="special" data-viewPort = "slideLeft">
+     </div>
+    </div>
+
+    
+    <div class="recommendation">
+        <div class="recommendation__item">
+            <img src="./recommendation.png" />
+
+            <div class="recommendation__item">
+                First image of the circle <br> and <span>Color change</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- TUTORIAL SECTION -->
+    <div class="video-container">
+        <div><h2>Tutorials on <span>Modern</span> Farming</h2></div>
+        <div class="tutorials">
+            <!-- <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4"  ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div>
+            <div class="video">
+                <video src="./Hydroponic.mp4"></video>
+            </div>
+            <div class="video">
+                <video src="Animations.mp4" ></video>
+            </div> -->
+        </div>
+
+        <!-- <div class="popup-video">
+            <span>&times;</span>
+            <video src="./Hydroponic.mp4"></video>
+        </div> -->
+      
+            <!-- Videos will be populated dynamically here -->
+       
+        <div class="popup-video">
+            <span>&times;</span>
+            <video id="popupVideo"></video>
+        </div>
+    </div>
+
+    <!------------  ARTICLES SECTION ----------------->
+    <div class="row">
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <button><a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a></button>
+        </div>
+
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
+        </div>
+
+        <div class="card">
+            <img src="./cocoa.png" >
+            <h4>Cocoa</h4>
+            <p>Low productivity, low farmer incomes and limited development<br> in farming communities has created a cycle<br>that must be broken for cocoa farming to be sustainable.</p>
+            <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
+            <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
+        </div>
+    </div>
+
+
+
+    <!---------------NEWSLETTER  --------------->
+    <div class="newsletter" id="newsletter">
+        <h2>Newsletter</h2>
+        <p>Subscribe to our newsletter for the latest updates!</p>
+        <div class="subscribe">
+            <!-- <img width="120" height="120" src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/external-newsletter-online-marketing-and-advertising-smashingstocks-flat-smashing-stocks.png" alt="external-newsletter-online-marketing-and-advertising-smashingstocks-flat-smashing-stocks"/> -->
+            <img src="./newsletter.svg" />
+            <form>
+                <input type="email" placeholder="Enter your email" autocomplete="off"  id="email">
+                <button type="submit" id="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!----------------------FOOTER  ----------------->
+    <footer>
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/agigibairene" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <!-- <a href=""><i class="fa-light fa-phone"></i></a> -->
+        </div>
+        <div class="footer-bar">
+            <ul>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Follow us</a></li>
+            </ul>
+        </div>
+    
+    <div class="bottom">
+        <p>Copyright &copy; 2024; Designed by <span class="designer"> Irene</span></p>
+    </div>
+</div>
+</footer>
+</body>
+</html>
