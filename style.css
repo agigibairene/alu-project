@@ -272,8 +272,6 @@ p{
    align-items: center;
    width: 100%;
    text-align: center;
-   /* background: var(--bg-color); */
-    /* background: #095000; */
 }
 
 .about h2{
@@ -309,7 +307,7 @@ p{
 
 }
 
-/*********************RECOMMENDATION  */
+/*********************RECOMMENDATION  ********************/
 
 .recommendation {
     width: 500px;
@@ -494,14 +492,17 @@ p{
   }
 
 /* ARTICLES SECTION */
+.articles{
+    background: #fff;
+}
 
 .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 3rem;
-    /* background: ; */
+    margin-top: 5rem;
+    /* background: white; */
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     
@@ -520,12 +521,14 @@ p{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    font-size: 18px;
 }
 
 .card img{
     width: 200px;
     margin:  1rem auto;
 }
+
 
 .card img{
     height: 150px;
@@ -534,9 +537,36 @@ p{
 
 .card p{
     text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
+.card a{
+    text-decoration: none;
+    color: white;
+}
 
+.card button{
+    background: #2980b9;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 40px;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: "Alkatra", system-ui;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.card button i{
+    padding-left: 4px ;
+}
+
+.card button:hover i{
+    transform: translateX(5px);
+}
 
 /***********************NEWSLETTER  **********************/
 .newsletter{
