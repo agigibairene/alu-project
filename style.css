@@ -96,7 +96,7 @@ header{
 }
 
 .nav-bar ul li a:hover{
-    color: #095000;
+    color: var(--bg-color);
     /* background: #fefefe; */
 }
 
@@ -403,7 +403,6 @@ p{
 }
   
 .container .main-video{
-    background: #fff;
     border-radius: 5px;
     padding: 10px;
 }
@@ -414,7 +413,7 @@ p{
 }
   
 .main-video .title{
-    color: #333;
+    color: #fff;
     font-size: 23px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -548,15 +547,20 @@ p{
     align-items: center;
     width: 100%;
     text-align: center;
-    background: #008B8B;
+    margin-bottom: 2rem;
 }
 
 .newsletter h2{
-    margin: 0.4rem;
+    margin: 2rem;
+    color: #39FF14;
+    font-size: 40px;
+    font-family: "Alkatra", system-ui;
 }
 
 .newsletter p{
     padding: 4px 4px 15px 4px;
+    color: #fff;
+    font-size: 19px;
 }
 
 .subscribe {
