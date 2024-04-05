@@ -7,6 +7,7 @@
     <script src="script.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="AppStyle.css" /> -->
     <title>EduAgric</title>
 </head>
 <body>
@@ -45,11 +46,11 @@
         <!-- LANDING PAGE -->
         <div class="head" id="head" >
             <div class="content" data-viewPort = "slideTop">
-               <h2 id="title"><span>Organic</span> Farming</h2>
-               <p>
-                We provide high-quality food products, ranging <br/>from vegetables to fruits.
-                We <b>only</b> grow and sell <br><b>non-GMO</b> products. Check out more below!
-               </p>
+               <h2 id="title"><span>Modern</span> Agriculture</h2>
+              <p> Embracing modern agricultural practices is crucial for<br>sustainable food production.
+                By integrating cutting-edge <br>technologies and environmentally friendly methods, 
+                we<br> enhance <span style="color: white;">efficiency, minimize resource usage, and ensure food<br> security</span> for future generations. 
+       .</p>
                <button id="learn-more">Learn more!<i class="ri-arrow-right-line"></i></button>
             </div>
             <img src="./smart-farm-application.webp" data-viewPort = "slideLeft"/>
@@ -62,123 +63,163 @@
      <div class=" content first" >
         <img src="./image2.png" data-viewPort = "slideLeft"/>
         <p data-viewPort = "slideTop">
-            <span>Overview</span><br>Our mission is to provide customers with access to <br>nutritious food that is free from genetically modified ingredients.<br>We work with local farmers who share our commitment to<br> organic agriculture, and we carefully select every products<br>that we sell to ensure that it meets our high quality standards
+            <span>Overview</span><br>To lead the agricultural revolution<br> by implementing 
+            cutting-edge practices,<br>fostering sustainability, and delivering<br>high-quality produce,
+             ensuring a resilient food<br> system for generations to come
         </p>
      </div>
      <div class="content">
         <p data-viewPort = "slideTop">
-            <span>Why Choose Us?</span><br>From fresh fruilts and vegetables to dairy products, <br>our selection of organic food is designed to meet<br>the diverse needs of our customers while supporting<br>a healthier planet. Our organic products are free fro<br>harmful chemicals and gene-modified ingredients</p>
+            <span>Why Choose Us?</span><br>We envision a world where modern<br>agricultural methods harmonize with nature,<br>
+             nurturing thriving ecosystems and communities.<br> 
+            Through innovation and dedication, we<br> strive to be the catalyst for global<br> agricultural transformation,
+             ensuring food security<br> and environmental sustainability</p>
         <img src="./image1.png" id="special" data-viewPort = "slideLeft">
      </div>
     </div>
 
     
     <div class="recommendation">
-        <div class="recommendation__item">
+
+        <div class="recommendation__item top">
             <img src="./recommendation.png" />
 
-            <div class="recommendation__item">
+            <div class="recommendation__item--text">
                 First image of the circle <br> and <span>Color change</span>
             </div>
         </div>
+
+        <div class="recommendation__item left">
+            <img src="./recommendation.png" />
+
+            <div class="recommendation__item--text">
+                First image of the circle <br> and <span>Color change</span>
+            </div>
+        </div>
+
+        <div class="recommendation__item bott">
+            <img src="./recommendation.png" />
+
+            <div class="recommendation__item--text">
+                First image of the circle <br> and <span>Color change</span>
+            </div>
+        </div>
+
+        <div class="recommendation__item right">
+            <img src="./recommendation.png" />
+
+            <div class="recommendation__item--text">
+                First image of the circle <br> and <span>Color change</span>
+            </div>
+        </div>
+
+        <div class="recommendation__item center">
+            <img src="./recommendation.png" />
+
+            <div class="recommendation__item--text">
+                First image of the circle <br> and <span>Color change</span>
+            </div>
+        </div>
+
 
     </div>
 
     <!-- TUTORIAL SECTION -->
     <div class="video-container">
-        <div><h2>Tutorials on <span>Modern</span> Farming</h2></div>
-        <div class="tutorials">
-            <!-- <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4"  ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div>
-            <div class="video">
-                <video src="./Hydroponic.mp4"></video>
-            </div>
-            <div class="video">
-                <video src="Animations.mp4" ></video>
-            </div> -->
+        <h2>Tutorials on <span>Modern</span> Farming</h2>
+        <div class="container">
+        <div class="main-video">
+          <div class="video">
+            <video src="./Animations.mp4" controls muted autoplay></video>
+            <h3 class="title">01. video title goes here</h3>
+          </div>
         </div>
-
-        <!-- <div class="popup-video">
-            <span>&times;</span>
-            <video src="./Hydroponic.mp4"></video>
-        </div> -->
-      
-            <!-- Videos will be populated dynamically here -->
-       
-        <div class="popup-video">
-            <span>&times;</span>
-            <video id="popupVideo"></video>
+    
+        <div class="video-list">
+          <div class="vid active">
+            <video src="./Animations.mp4" muted></video>
+            <h3 class="title">0.1 video title goes here</h3>
+          </div>
+    
+          <div class="vid">
+            <video src="./Animations.mp4 " muted></video>
+            <h3 class="title">0.2 video title goes here</h3>
+          </div>
+    
+          <div class="vid">
+            <video src="./Animations.mp4" muted></video>
+            <h3 class="title">0.3 video title goes here</h3>
+          </div>
+    
+          <div class="vid">
+            <video src="./Animations.mp4" muted></video>
+            <h3 class="title">0.4 video title goes here</h3>
+          </div>
+    
+          <div class="vid">
+            <video src="./Animations.mp4" muted></video>
+            <h3 class="title">0.1 video title goes here</h3>
+          </div>
+    
+          <div class="vid">
+            <video src="./Animations.mp4" muted></video>
+            <h3 class="title">0.1 video title goes here</h3>
+          </div>
+    
         </div>
-    </div>
+      </div>
+    
+      </div>
 
     <!------------  ARTICLES SECTION ----------------->
     <div class="row">
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <button><a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a></button>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
             <img src="./cocoa.png" >
             <h4>Cocoa</h4>
             <p>Low productivity, low farmer incomes and limited development<br> in farming communities has created a cycle<br>that must be broken for cocoa farming to be sustainable.</p>
             <p>Low productivity, low farmer incomes and limited development in farming communities has created a cycle that must be broken for cocoa farming to be sustainable.</p>
             <a href="https://www.cocoalife.org/in-the-cocoa-origins/">Read more</a>
-        </div>
+        </div> -->
     </div>
 
 

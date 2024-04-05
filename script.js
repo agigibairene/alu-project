@@ -78,29 +78,24 @@ elseViewport.forEach(els => {
 
 // TUTORIALS SECTION
 
-const videos = document.querySelectorAll("video");
+let listVideo = document.querySelectorAll(".video-list .vid");
+let mainVideo = document.querySelector(".main-video video");
+let title =document.querySelector(".main-video .title");
 
-
-videos.forEach(vid => {
-    vid.addEventListener("click", () =>{
-        document.querySelector('.popup-video').style.display = "block";
-        document.querySelector(".popup-video video").src = vid.getAttribute("src")
-        vid.classList.toggle("active");
-
-    if (vid.paused){
-        vid.play();
-    }
-    else{
-        vid.pause();
-        vid.currentTime = 0;
-        }
-    });
-});
-
-document.querySelector('.popup-video span').addEventListener("click", () =>{
-    document.querySelector('.popup-video').style.display = "none";
-});
-
+listVideo.forEach(video =>{
+    video.onclick = () =>{
+        listVideo.forEach(vid =>{
+            vid.classList.remove("active");
+            video.classList.add("active");
+            if (video.classList.contains("active")){
+                let src = video.children[0].getAttribute("src");
+                mainVideo.src = src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML = text
+            }
+        })
+    };
+})
 
 
 // NEWSLETTER
@@ -120,74 +115,3 @@ btn.addEventListener("click", () =>{
 
 
 
-
-
-
-
-
-
-async function fetchData() {
-    try {
-        const response = await fetch('http://localhost:8080/tutorials');
-        const data = await response.json();
-        const ans = data.tutorials
-        return data;
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
-
-// Function to populate video tutorials
-async function populateVideos() {
-    const data = await fetchData();
-    const tutorialsDiv = document.querySelector('.tutorials');
-
-    data.videos.forEach(video => {
-        const videoDiv = document.createElement('div');
-        videoDiv.classList.add('video');
-        const videoElement = document.createElement('video');
-        videoElement.src = video.src;
-        videoDiv.appendChild(videoElement);
-        tutorialsDiv.appendChild(videoDiv);
-    });
-}
-
-// Function to populate articles
-async function populateArticles() {
-    const data = await fetchData();
-    const articlesSection = document.getElementById('articlesSection');
-
-    data.articles.forEach(article => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
-
-        const img = document.createElement('img');
-        img.src = article.imageSrc;
-        cardDiv.appendChild(img);
-
-        const h4 = document.createElement('h4');
-        h4.textContent = article.title;
-        cardDiv.appendChild(h4);
-
-        const p1 = document.createElement('p');
-        p1.textContent = article.paragraph1;
-        cardDiv.appendChild(p1);
-
-        const p2 = document.createElement('p');
-        p2.textContent = article.paragraph2;
-        cardDiv.appendChild(p2);
-
-        const readMoreLink = document.createElement('a');
-        readMoreLink.href = article.link;
-        readMoreLink.textContent = 'Read more';
-        cardDiv.appendChild(readMoreLink);
-
-        articlesSection.appendChild(cardDiv);
-    });
-}
-
-// Populate videos and articles when the page loads
-document.addEventListener('DOMContentLoaded', async () => {
-    await populateVideos();
-    await populateArticles();
-});
